@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<idea-plugin version="2">
+    <name>Unitils plugin</name>
+    <description>To make Unitils using easy!</description>
+    <version>0.2</version>
+    <vendor email="linux_china@hotmail.com">linux_china</vendor>
+    <idea-version since-build="107.105"/>
+    <depends>com.intellij.spring</depends>
+
+    <change-notes><![CDATA[
+     <ul>Initial Version
+            <li>Spring Bean name completion for @SpringBean</li>
+            <li>Dataset xml file completion for @DataSet</li>
+            <li>Annotator support for Spring bean reference by @SpringBean, @SpringBeanByName and @SpringBeanByType
+            <li>Annotator support for dataset xml reference by @DataSet</li>
+            <li>Auto dataset xml file creation by click annotator icon</li>
+            <li>Navigation easy for Unitils</li>
+     </ul>
+    ]]></change-notes>
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <annotator language="JAVA" implementationClass="com.intellij.unitils.annotators.SpringBeanReferenceAnnotator"/>
+        <psi.referenceContributor implementation="com.intellij.unitils.providers.UnitilsDataSetContributor"/>
+        <psi.referenceContributor implementation="com.intellij.unitils.providers.SpringApplicationContextContributor"/>
+        <psi.referenceContributor implementation="com.intellij.unitils.providers.SpringBeanNameContributor"/>
+    </extensions>
+
+</idea-plugin>
