@@ -1,1 +1,2 @@
-This file was created by IntelliJ IDEA 11.1.3 for binding GitHub repository
+It's fork of Unitils plugin for support it in IntelliJ IDEA 11.
+A major goal of this plugin - integration between Unitils and Spring in tests.

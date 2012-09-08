@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<idea-plugin version="2">
+<idea-plugin version="3">
     <name>Unitils plugin</name>
     <description>To make Unitils using easy!</description>
-    <version>0.2</version>
+    <version>0.3</version>
     <vendor email="linux_china@hotmail.com">linux_china</vendor>
-    <idea-version since-build="107.105"/>
+    <idea-version since-build="11.1.3"/>
     <depends>com.intellij.spring</depends>
 
     <change-notes><![CDATA[
